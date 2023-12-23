@@ -1,0 +1,40 @@
+This is a simple program designed to take a bitmap subtitle stream and 
+convert it to an srt file. 
+
+Python Dependencies:
+argparse
+numpy
+opencv
+pillow
+pytesseract
+
+
+These can be installed by running the following:
+pip install argparse
+pip install numpy
+pip install opencv-python
+pip install Pillow
+pip install pytesseract
+
+Non-python dependencies:
+ffmpeg
+ffprobe
+
+How these are installed depends on your operating system
+
+How this is used:
+An example seen here is for running this with the cloned repository being 
+the current working directory.
+
+bitmap_to_srt example_input.mkv 
+
+This creates a a srt file from example_input.mkv and creates a file 
+subtitle.srt in the current working directory.
+
+Flags:
+-o [value] allows user to specify the filepath of the new file to create.
+-s [number] allows user to sepecify which subtitle stream to convert to an 
+srt file. Defaults to the first subtitle stream.
+-v verbose mode has the program give some additional information on what 
+it is doing
+-h view the help screen
